@@ -42,7 +42,7 @@ export default function Pricing() {
               Pricing
             </span>
             <h2 className="font-orbitron font-black text-3xl md:text-5xl mb-6 text-gray-100">
-              Choose Your <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 drop-shadow-[0_0_10px_rgba(255,215,0,0.5)]">Lifetime Package</span>
+              Choose Your <span className="bg-clip-text text-transparent bg-gradient-to-r drop-shadow-[0_2px_2px_rgba(0,0,0,1)] from-yellow-400 to-orange-500 drop-shadow-[0_0_10px_rgba(255,215,0,0.5)]">Lifetime Package</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-3xl mx-auto">
               No subscriptions. No surprises. Three one-time options — all with <b className="text-gray-200">Lifetime License</b> & <b className="text-gray-200">Instant Delivery of EA within 1 Hour of Payment</b>. <span className="text-red-500 font-bold drop-shadow-[0_0_5px_rgba(255,0,0,0.5)]">50% OFF — Limited Days Only.</span>
@@ -52,7 +52,7 @@ export default function Pricing() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
             
             {/* Package A */}
-            <div className="bg-[#0a0a0f] rounded-3xl p-8 border border-gray-800 flex flex-col h-full relative transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(0,243,255,0.1)] hover:border-cyan-500/30">
+            <div className="bg-[#0a0a0f] rounded-3xl p-8 border border-gray-800 flex flex-col h-full relative transition-all duration-300 hover:-translate-y-2 hover:drop-shadow-[0_0_20px_rgba(0,243,255,0.4)] hover:shadow-[0_0_30px_rgba(0,243,255,0.2)] hover:border-cyan-500/30">
               <span className="text-4xl mb-4 block drop-shadow-md">🥉</span>
               <h3 className="text-gray-500 uppercase tracking-widest text-sm font-bold">Package A</h3>
               <div className="font-orbitron text-2xl text-cyan-400 font-black mb-3">STARTER</div>
@@ -97,7 +97,7 @@ export default function Pricing() {
                 ].map((ai, i) => (
                   <li key={i} className="flex gap-3 text-sm items-start p-2 rounded-lg bg-gradient-to-r from-yellow-900/20 to-transparent">
                     <i className={`fa-solid ${ai.icon} text-red-500 mt-1 drop-shadow-[0_0_5px_rgba(255,0,0,0.5)]`}></i>
-                    <b className="bg-clip-text text-transparent bg-gradient-to-r from-[#00F0FF] via-[#B026FF] to-[#FF0055] font-black">{ai.text}</b>
+                    <b className="bg-clip-text text-transparent bg-gradient-to-r drop-shadow-[0_2px_2px_rgba(0,0,0,1)] from-[#00F0FF] via-[#B026FF] to-[#FF0055] font-black">{ai.text}</b>
                   </li>
                 ))}
               </ul>
@@ -113,7 +113,7 @@ export default function Pricing() {
             </div>
 
             {/* Package B */}
-            <div className="bg-[#0a0a0f] rounded-3xl p-8 border-2 border-yellow-500 shadow-[0_15px_40px_rgba(255,215,0,0.15)] flex flex-col h-full relative transition-all duration-300 transform lg:scale-105 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(255,215,0,0.25)] z-10">
+            <div className="bg-[#0a0a0f] rounded-3xl p-8 border-2 border-yellow-500 shadow-[0_15px_40px_rgba(255,215,0,0.15)] flex flex-col h-full relative transition-all duration-300 transform lg:scale-105 hover:-translate-y-2 hover:drop-shadow-[0_0_25px_rgba(255,215,0,0.5)] hover:shadow-[0_0_40px_rgba(255,215,0,0.3)] z-10">
               <span className="absolute -top-4 left-1/2 -translate-x-1/2 px-5 py-1.5 rounded-full bg-gradient-to-r from-red-600 to-pink-600 text-white text-xs font-black tracking-widest shadow-[0_10px_20px_rgba(255,0,100,0.4)] whitespace-nowrap">
                 🔥 MOST POPULAR
               </span>
@@ -164,7 +164,7 @@ export default function Pricing() {
                 ].map((ai, i) => (
                   <li key={i} className="flex gap-3 text-sm items-start p-2 rounded-lg bg-gradient-to-r from-yellow-900/20 to-transparent">
                     <i className={`fa-solid ${ai.icon} text-red-500 mt-1 drop-shadow-[0_0_5px_rgba(255,0,0,0.5)]`}></i>
-                    <b className="bg-clip-text text-transparent bg-gradient-to-r from-[#00F0FF] via-[#B026FF] to-[#FF0055] font-black">{ai.text}</b>
+                    <b className="bg-clip-text text-transparent bg-gradient-to-r drop-shadow-[0_2px_2px_rgba(0,0,0,1)] from-[#00F0FF] via-[#B026FF] to-[#FF0055] font-black">{ai.text}</b>
                   </li>
                 ))}
               </ul>
@@ -180,7 +180,7 @@ export default function Pricing() {
             </div>
 
             {/* Package C */}
-            <div className="bg-[#0a0a0f] rounded-3xl p-8 border border-gray-800 flex flex-col h-full relative transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(255,0,234,0.1)] hover:border-fuchsia-500/30">
+            <div className="bg-[#0a0a0f] rounded-3xl p-8 border border-gray-800 flex flex-col h-full relative transition-all duration-300 hover:-translate-y-2 hover:drop-shadow-[0_0_20px_rgba(255,0,234,0.4)] hover:shadow-[0_0_30px_rgba(255,0,234,0.2)] hover:border-fuchsia-500/30">
               <span className="text-4xl mb-4 block drop-shadow-md">🥇</span>
               <h3 className="text-gray-500 uppercase tracking-widest text-sm font-bold">Package C</h3>
               <div className="font-orbitron text-2xl text-fuchsia-400 font-black mb-3">ULTIMATE</div>
@@ -232,7 +232,7 @@ export default function Pricing() {
                 ].map((ai, i) => (
                   <li key={i} className="flex gap-3 text-sm items-start p-2 rounded-lg bg-gradient-to-r from-yellow-900/20 to-transparent">
                     <i className={`fa-solid ${ai.icon} text-red-500 mt-1 drop-shadow-[0_0_5px_rgba(255,0,0,0.5)]`}></i>
-                    <b className="bg-clip-text text-transparent bg-gradient-to-r from-[#00F0FF] via-[#B026FF] to-[#FF0055] font-black">{ai.text}</b>
+                    <b className="bg-clip-text text-transparent bg-gradient-to-r drop-shadow-[0_2px_2px_rgba(0,0,0,1)] from-[#00F0FF] via-[#B026FF] to-[#FF0055] font-black">{ai.text}</b>
                   </li>
                 ))}
               </ul>
@@ -259,7 +259,7 @@ export default function Pricing() {
               How to Purchase
             </span>
             <h2 className="font-orbitron font-black text-3xl md:text-5xl mb-6 text-gray-100">
-              Buy in <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 drop-shadow-[0_0_10px_rgba(255,215,0,0.5)]">5 Simple Steps</span>
+              Buy in <span className="bg-clip-text text-transparent bg-gradient-to-r drop-shadow-[0_2px_2px_rgba(0,0,0,1)] from-yellow-400 to-orange-500 drop-shadow-[0_0_10px_rgba(255,215,0,0.5)]">5 Simple Steps</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-3xl mx-auto">
               Pay via crypto (USDT / BTC / ETH) and receive Velox Gold Scalper EA V11.1 — with all files, license keys and setup guide — via <b className="text-gray-200 drop-shadow-[0_0_5px_rgba(255,255,255,0.3)]">Instant Delivery of EA within 1 Hour of Payment</b>.

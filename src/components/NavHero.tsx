@@ -19,6 +19,13 @@ export default function NavHero() {
             <span className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-400 to-fuchsia-600 flex items-center justify-center text-black shadow-[0_0_15px_rgba(255,0,234,0.6)]"><i className="fa-solid fa-chart-line"></i></span>
             <span>VELOX <span className="text-fuchsia-500 drop-shadow-[0_0_8px_rgba(255,0,234,0.6)]">V11.1</span></span>
           </a>
+          <div className="hidden lg:flex items-center gap-2 px-3 py-1 rounded-full bg-green-950/40 border border-green-500/40 text-green-400 text-[10px] font-bold uppercase tracking-widest shadow-[0_0_10px_rgba(0,255,170,0.2)] ml-auto mr-4">
+            <div className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+            </div>
+            Market Open
+          </div>
           <div className={`fixed lg:static top-[70px] left-0 w-full lg:w-auto bg-[#050505] lg:bg-transparent flex flex-col lg:flex-row items-center gap-2 lg:gap-4 p-5 lg:p-0 transition-transform duration-300 ${navOpen ? 'translate-y-0 border-b border-cyan-500/50 shadow-[0_10px_30px_rgba(0,0,0,0.8)]' : '-translate-y-[150%] lg:translate-y-0'} -z-10 lg:z-auto`}>
             {['Features', 'V11.1 New', 'Why Us', 'Specs', 'Pricing', 'How to Buy', 'Reviews', 'FAQs', 'Contact'].map(link => (
               <a key={link} href={`#${link.toLowerCase().replace(/[^a-z0-9]/g, '')}`} onClick={() => setNavOpen(false)} className="w-full lg:w-auto text-center px-4 py-2 text-gray-300 hover:text-cyan-400 hover:bg-cyan-900/20 rounded-lg transition-colors font-medium">

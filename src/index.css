@@ -226,3 +226,14 @@ footer ul a:hover{color:var(--gold);text-shadow:0 0 8px rgba(0,240,255,.4)}
 @media (max-width:1024px){.hero-inner{grid-template-columns:1fr;gap:34px}.pricing-grid{grid-template-columns:1fr;max-width:520px;margin-left:auto;margin-right:auto}.plan.popular{transform:none}.plan.popular:hover{transform:translateY(-8px)}.compare-grid,.wallet-grid{grid-template-columns:1fr}.foot-grid{grid-template-columns:1fr 1fr;gap:26px}.trust-inner{grid-template-columns:repeat(2,1fr);gap:20px}}
 @media (max-width:720px){.nav-links{position:fixed;top:70px;left:0;right:0;background:rgba(5,5,5,.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--line);flex-direction:column;padding:24px;gap:8px;transform:translateY(-120%);transition:.3s}.nav-links.open{transform:translateY(0)}.nav-links a{width:100%;padding:14px 18px;text-align:center}.nav-cta{width:100%;text-align:center}.burger{display:inline-block}section{padding:50px 0}.hero-badges{grid-template-columns:1fr 1fr}.foot-grid{grid-template-columns:1fr}.trust-inner{grid-template-columns:1fr}.tg-float{padding:14px 20px;font-size:.9rem}.tg-float span{display:none}}
 @media (max-width:480px){.hero{padding-top:110px}.hero-badges{grid-template-columns:1fr}.btn{width:100%;justify-content:center}.price-flash{flex-direction:column;text-align:center}}
+
+.fade-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.fade-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
