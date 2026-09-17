@@ -5,6 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: '/Velox-11.1-PRO/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
